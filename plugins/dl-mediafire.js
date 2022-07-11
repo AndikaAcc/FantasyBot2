@@ -28,7 +28,7 @@ await conn.sendMessage(m.chat, { document: { url: json.result.url}, mimetype: 'd
 }
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(mediafire)?$/i
+handler.command = /^(mediafire)$/i
 
 
 
