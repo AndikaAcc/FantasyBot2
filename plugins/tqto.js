@@ -9,36 +9,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 Nurutomo: 
 https://github.com/Nurutomo
-Istikmal: 
-https://github.com/BochilGaming
-Ariffb: 
-https://github.com/Ariffb25
-Aguz Familia:
-https://github.com/FokusDotId
-Amelia Lisa:
-https://github.com/Ameliascrf
-Aniq12:
-https://github.com/aniq12
-Ilman: 
-https://github.com/ilmanhdyt
-Amirul: 
-https://github.com/amiruldev20
-Irwan:
-https://github.com/irwanx
-Rasel:
-https://github.com/raselcomel
-𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷:
-https://github.com/Kangsad01
-Kannachann:
-https://github.com/Kannachann
-Xtreshe:
-https://github.com/Xtreshebot
-Pilar:
-https://github.com/PilarV2
-Fahri Adison:
-https://github.com/FahriAdison
-Made Ganz:
-https://github.com/Madexyz
+
+My Self
 
 \`\`\`${conn.user.name}\`\`\`
 `
