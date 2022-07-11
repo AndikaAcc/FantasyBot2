@@ -15,13 +15,13 @@ Rp. 20,000 Pulsa
 Rp. 10,000 Dana
 Rp. 10,000 Pulsa
 3. Premium + Grup / 30 Hari
-Rp. 20,000 Dana
-Rp. 20,000 Pulsa
+Rp. 35.000 Dana
+Rp. 35,000 Pulsa
 wa.me/${owner[0]}
 *Bukan Bot!!!*
 *Owner ${conn.user.name}*
 `,
-  buttonText: 'Harga Bisa Nego Kack 😉',
+  buttonText: 'Harga Bisa Nego Kack ✨',
   listType: 2,
   productListInfo: {
   productSections: [{
@@ -31,7 +31,7 @@ wa.me/${owner[0]}
   jpegThumbnail: d },
   businessOwnerJid: `${owner[0]}@s.whatsapp.net`
   },
-  footerText: 'https://github.com/Kangsad01',
+  footerText: '',
   }},{})
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
 }
