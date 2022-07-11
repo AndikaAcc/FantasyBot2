@@ -328,7 +328,7 @@ ${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, await genProfile(conn, m), text.trim(), wm, `Owner Bot`, `${_p}owner`, `Speed Bit`, `${_p}speed`, `Donasi`, `${_p}donasi`, m)
+    await conn.send3TemplateButtonImg(m.chat, await genProfile(conn, m), text.trim(), wm, `𝙾𝚠𝚗𝚎𝚛`, `${_p}owner`, `𝚂𝚙𝚎𝚎𝚍 𝙱𝚘𝚝`, `${_p}speed`, `𝙳𝚘𝚗𝚊𝚜𝚒`, `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
