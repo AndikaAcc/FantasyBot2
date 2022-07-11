@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let [packname, ...author] = text.split('|')
     author = (author || []).join('|')
     let mime = m.quoted.mimetype || ''
-    if (!/webp/.test(mime)) throw 'Balas stikernya cokk!'
+    if (!/webp/.test(mime)) throw 'Balas stikernya cantik/gnteng!'
     let img = await m.quoted.download()
     if (!img) throw 'Balas Stiker!'
     stiker = await addExif(img, packname || '', author || '')
@@ -16,7 +16,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (Buffer.isBuffer(e)) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, false, { asSticker: true })
-    else throw 'Gagal ngasih wm cokk!\nusahakan kirim terus balas stikernya ya cokk!'
+    else throw 'Gagal ngasih wm!\nusahakan kirim terus balas stikernya ya𝚊!'
   }
 }
 handler.help = ['wm <packname>|<author>']
