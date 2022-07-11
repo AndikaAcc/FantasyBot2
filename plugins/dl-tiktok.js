@@ -1,26 +1,54 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, args }) => {
-  if (!args[0]) throw 'Uhm...url nya mana?'
- // let url = `https://api.lolhuman.xyz/api/tiktokwm?apikey=9b817532fadff8fc7cb86862&url=${args[0]}`
-    m.reply(wait)
-await conn.reply(m.chat, `Downloading media from Tiktok`, 0, {
-  contextInfo: { mentionedJid: [m.sender],
-    externalAdReply :{
-    mediaUrl: linkig,
-    mediaType: 2,
-    description: deslink , 
-    title: titlink,
-    body: wm, //`${fileSizeH}`,
-    thumbnail: await(await fetch(img)).buffer(),
-    sourceUrl: linkgc
-     }}
-  })
-let txt = `🚀 *Link:* ${await(await axios.get(`https://tinyurl.com/api-create.php?url=${args[0]}`)).data}` 
-    await conn.send2ButtonVid(m.chat, `https://api.lolhuman.xyz/api/tiktokwm?apikey=9b817532fadff8fc7cb86862&url=${args[0]}` , txt, wm, `No Wm`, `.tiktoknowm ${args[0]}`, `Audio`, `.tiktokaudio ${args[0]}`, m)
+/*const { tiktokdl, tiktokdlv2 } = require('@bochilteam/scraper')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    if (!args[0]) throw `Use example ${usedPrefix}${command} https://www.tiktok.com/@omagadsus/video/7025456384175017243`
+    const { author: { nickname }, video, description } = await tiktokdl(args[0]).catch(async _ => await tiktokdlv2(args[0]))
+    const url = video.no_watermark || video.no_watermark_hd || video.with_watermark || video.no_watermark_raw
+    if (!url) throw 'Can\'t download video!'
+    conn.sendFile(m.chat, url, 'tiktok.mp4', `
+🔗 *Url:* ${url}
+🧏 *Nickname:* ${nickname}${description ? `🖹 *Description:* ${description}` : ''}
+`.trim(), m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
-handler.command = /^((tt|tiktok)?(dl)?)$/i
+handler.command = /^(tik(tok)?(dl)?)$/i
+
+module.exports = handler*/
+
+
+const hxz = require("hxz-api")
+let handler = async(m, { conn, args, usedPrefix, command }) => {
+if (!args[0]) throw `*Perintah ini untuk mengunduh video tiktok dengan link*\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`
+if (!args[0].match(/tiktok/gi)) throw `*Link salah! Perintah ini untuk mengunduh video tiktok dengan link*\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`
+let p = await  hxz.ttdownloader(args[0])
+const { nowm, wm, audio } = p
+// made by arietube
+ conn.sendFile(m.chat, nowm, 'tiktok.mp4', `*${global.wm}*`, m)
+}
+handler.help = ['tiktok'].map(v => v + ' <url>')
+handler.tags = ['downloader']
+handler.command = /^(tiktok|tiktokdl|ttdl)$/i
+handler.limit = true
+module.exports = handler
+
+/*
+const { tiktokdl, tiktokdlv2 } = require('@bochilteam/scraper')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    if (!args[0]) throw `*Perintah ini untuk mengunduh video tiktok dengan link*\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`
+    if (!args[0].match(/tiktok/gi)) throw `*Link salah! Perintah ini untuk mengunduh video tiktok dengan link*\n\ncontoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`
+    const { author: { nickname }, video, description } = await tiktokdl(args[0]).catch(async _ => await tiktokdlv2(args[0]))
+    const url = video.no_watermark || video.no_watermark_hd || video.with_watermark || video.no_watermark_raw
+    if (!url) throw 'Can\'t download video!'
+    m.reply('Sedang diproses...')
+    conn.sendFile(m.chat, url, 'tiktok.mp4', `*© Arietube*
+`.trim(), m)
+}
+handler.help = ['tiktok <url>']
+handler.tags = ['downloader']
+
+handler.command = /^(tik|tt|tiktok)$/i
 
 module.exports = handler
+*/
+
