@@ -9,8 +9,8 @@ let handler = async (m, { conn, args, usedPrefix }) => {
     let count = (args[1] || args.length > 0 ? !isNaN(parseInt(args[1])) ? parseInt(args[1]) : 1 : 1) || 1
     if ((user.warning * 1) < count * 1) throw `User hanya memiliki *${user.warning * 1}* WARN!!`
     user.warning -= count * 1
-    m.reply('Berhasil Unwarn user!!')
-    conn.sendButton(mention, 'Kamu telah di Unwarn OWNER Atau MODERATOR, sekarang kamu memiliki *' + (global.db.data.users[mention].warning * 1) + '* WARN', wm, 'Owner', usedPrefix + 'owner', null)
+    m.reply('Sukses Unwarn user!!')
+    conn.sendButton(mention, '❗Kamu telah di Unwarn OWNER Atau MODERATOR, sekarang kamu memiliki *' + (global.db.data.users[mention].warning * 1) + '* WARN', wm, 'Owner', usedPrefix + 'owner', null)
 }
 
 handler.help = ['unwarn @mention']
