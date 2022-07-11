@@ -64,7 +64,7 @@ global.zt = '*'
 global.zc = ''
 
 global.thumbnailUrl = [
-  'https://telegra.ph/file/7a6f7fda6f70f6156d431.jpg'
+  'https://telegra.ph/file/1bfa0764a445b9fcc1a0c.jpg'
 ]
 
 //============= Games ================//
