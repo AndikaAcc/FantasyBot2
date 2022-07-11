@@ -2,7 +2,7 @@ let fs = require('fs')
 let fetch = require('node-fetch')
 let handler = m => m
 handler.all = async function (m) {
-	let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+	let pp = 'https://telegra.ph/file/00d31bdc42064c24f6456.jpg'
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
@@ -20,7 +20,7 @@ handler.all = async function (m) {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6282331033919-1625305606@g.us" } : {}) 
+	 { remoteJid: "6285785845416-1625305606@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -35,7 +35,7 @@ handler.all = async function (m) {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6282331033919-1625305606@g.us" } : {}) 
+	 { remoteJid: "6285785845416-1625305606@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -51,7 +51,7 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"by : The.sad.boy01","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"by : Rull","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
 	}
         
 	       global.fliveLoc2 = {
@@ -106,9 +106,9 @@ key: {
 	},
 	"message": {
 		"groupInviteMessage": {
-			"groupJid": "6282331033919-1625305606@g.us",
+			"groupJid": "6285785845416-1625305606@g.us",
 			"inviteCode": "null",
-			"groupName": "☬𝚁𝚊𝚡𝚌𝚎𝚕 ༼༽𝚡 𝚎𝚟𝚒𝚕 𝐎𝔣ᶜ ◉", 
+			"groupName": "𝑭𝒂𝒏𝒕𝒂𝒔𝒚 𝑩𝒐𝒕", 
             "caption": `╭─${kki}RULES BOT${kka}
 │
 ├❒ DILARANG TOXIC
@@ -120,7 +120,7 @@ key: {
 ├❒ DILARANG PROMOSI
 ├❒ BOT TIDAK MENERIMA SAVE KONTAK
 │
-├❏ KALO MELANGGAR AKAN LANGSUNG DIBAN DAN DI BLOKIR TANPA TOLERANSI SEDIKIT PUN
+├❏ KALO MELANGGAR AKAN LANGSUNG DIBAN DAN DI BLOKIR
 │
 └─${kki}RULES BOT${kka}`, 
             'jpegThumbnail': fs.readFileSync('./src/logo.jpg')
@@ -132,7 +132,7 @@ key: {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6282331033919-1625305606@g.us" } : {}) 
+	 { remoteJid: "6285785845416-1625305606@g.us" } : {}) 
                 },
 	 message: { 
                  "videoMessage": { 
