@@ -21,8 +21,6 @@ const defaultMenu = {
 │
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
-├ Github:
-├ %github
 │
 ├ Note :
 ├ *Ⓟ* = Premium
@@ -33,7 +31,6 @@ const defaultMenu = {
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%npmname@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -255,7 +252,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ❏ *U S E R   I N F O*
 • Nama    : *${name}*
 • Limit   : *${limit}*
-• Status  : *${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner 🗿' : 'Users ⚔️'}*
+• Status  : *${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner Bot' : 'Users'}*
 • Premium : *${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}*
 
 ❏ *S T A T U S   I N F O*
@@ -274,13 +271,10 @@ _*${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik*_
 ❏ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
 _*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
 
-❏ 𝙐𝙇𝘼𝙉𝙂 𝙏𝘼𝙃𝙐𝙉 𝙊𝙒𝙉𝙀𝙍
-_*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
-
 ${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
       footer: wm,
       title: judul,
-      buttonText: "Klik Disini",
+      buttonText: "Klik Disini Ye",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
@@ -334,7 +328,7 @@ ${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, await genProfile(conn, m), text.trim(), wm, `🏅Owner`, `${_p}owner`, `🎖ThanksTo`, `${_p}tqto`, `🎗  Donasi  🎗`, `${_p}donasi`, m)
+    await conn.send3TemplateButtonImg(m.chat, await genProfile(conn, m), text.trim(), wm, `Owner Bot`, `${_p}owner`, `Speed Bit`, `${_p}speed`, `Donasi`, `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
