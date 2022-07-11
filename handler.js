@@ -33,7 +33,7 @@ module.exports = {
         global.namabot = conn.user.name
         global.packname = global.namabot
         global.author = global.data.owner
-        //global.author = 'The.sad.boy01'
+        //global.author = 'Bot By Rull'
         global.wm2 = global.data.namabot + ' ' + global.data.owner
         global.wm = namabot + ' 𝑭𝑨𝑵𝑻𝑨𝑺𝒀𝑩𝑶𝑻'
         global.colong1 = 'Ciss 📸'
@@ -626,7 +626,7 @@ module.exports = {
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
-                        let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+                        let pp = 'https://telegra.ph/file/93d651998e25594cb961e.jpg'
                         try {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
