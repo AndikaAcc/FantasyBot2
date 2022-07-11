@@ -15,7 +15,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let username = conn.getName(who)
     let str = `
 ╭───ꕥ *PROFILE* ꕥ───✾
-│•> Name: ${username}
+│•> Nama: ${username}
 │•> Premium: ${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}
 │•> Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 │•> Umur: *${age == '-1' ? 'Belum Daftar' : age}*
