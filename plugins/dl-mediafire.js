@@ -1,6 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Use example ${usedPrefix + command} https://www.mediafire.com/file/*****.docs`
+  if (!args[0]) throw `❗Use example ${usedPrefix + command} https://www.mediafire.com/file/*****.docs`
 let res = await fetch(API('xteam', '/dl/mediafire', { url: args[0] }, 'apikey'))
     let json = await res.json()
     
@@ -28,7 +28,7 @@ await conn.sendMessage(m.chat, { document: { url: json.result.url}, mimetype: 'd
 }
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(mediafire|mf)?$/i
+handler.command = /^(mediafire)?$/i
 
 
 
