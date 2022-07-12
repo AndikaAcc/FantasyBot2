@@ -271,7 +271,7 @@ _*${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik*_
 ⋆ : ̗̀➛ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
 _*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
 
-📮Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
+📮Note: Jika ada Fitur yg Error Lapor ke owner`,
       footer: wm,
       title: judul,
       buttonText: "Pilih menu disini",
@@ -336,7 +336,7 @@ _*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
 }
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(m(enu)?|help|\?)$/i
+handler.command = /^(m(enu)?|help|command|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
