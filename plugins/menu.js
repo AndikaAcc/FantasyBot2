@@ -221,60 +221,60 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       {
         title: 'List Menu ' + namabot,
         rows: [
-          { title: 'Semua Perintah', rowId: `${_p + command} all` },
-          { title: 'Game', rowId: `${_p + command} game` },
-          { title: 'Rpg', rowId: `${_p + command} rpg` },
-          { title: 'XP', rowId: `${_p + command} xp` },
-          { title: 'Stiker', rowId: `${_p + command} stiker` },
-          { title: 'Kerang Ajaib', rowId: `${_p + command} kerangajaib` },
-          { title: 'Quotes', rowId: `${_p + command} quotes` },
-          { title: 'Grup', rowId: `${_p + command} grup` },
-          { title: 'Premium', rowId: `${_p + command} premium` },
-          { title: 'Internet', rowId: `${_p + command} internet` },
-          { title: 'Anonymous', rowId: `${_p + command} anonymous` },
-          { title: 'Nulis & Logo', rowId: `${_p + command} nulis` },
-          { title: 'Downloader', rowId: `${_p + command} downloader` },
-          { title: 'Tools', rowId: `${_p + command} tools` },
-          { title: 'Fun', rowId: `${_p + command} fun`},
-          { title: 'Database', rowId: `${_p + command} database` },
-          { title: 'Vote & Absen', rowId: `${_p + command} vote` },
-          { title: "Al-Qur\'an", rowId: `${_p + command} quran` },
-          { title: 'Pengubah Suara', rowId: `${_p + command} audio` },
-          { title: 'Jadi Bot', rowId: `${_p + command} jadibot` },
-          { title: 'Info', rowId: `${_p +command} info` },
-          { title: 'Tanpa Kategori', rowId: `${_p + command} tanpakategori` },
-          { title: 'Owner', rowId: `${_p + command} owner` },
+          { title: '💬┊ Semua Perintah', rowId: `${_p + command} all` },
+          { title: '🎮┊ Game', rowId: `${_p + command} game` },
+          { title: '🌱┊ Rpg', rowId: `${_p + command} rpg` },
+          { title: '✨┊ XP', rowId: `${_p + command} xp` },
+          { title: '🖼️┊ Stiker', rowId: `${_p + command} stiker` },
+          { title: '🐚┊ Kerang Ajaib', rowId: `${_p + command} kerangajaib` },
+          { title: '📓┊ Quotes', rowId: `${_p + command} quotes` },
+          { title: '👥┊ Grup', rowId: `${_p + command} grup` },
+          { title: '⭐┊ Premium', rowId: `${_p + command} premium` },
+          { title: '❗┊ Internet', rowId: `${_p + command} internet` },
+          { title: '🎭┊ Anonymous', rowId: `${_p + command} anonymous` },
+          { title: '✏️┊ Nulis & Logo', rowId: `${_p + command} nulis` },
+          { title: '⬇️┊ Downloader', rowId: `${_p + command} downloader` },
+          { title: '🦋┊ Tools', rowId: `${_p + command} tools` },
+          { title: '🎉┊ Fun', rowId: `${_p + command} fun`},
+          { title: '🗃️┊ Database', rowId: `${_p + command} database` },
+          { title: '🔉┊ Vote & Absen', rowId: `${_p + command} vote` },
+          { title: "📖┊ Al-Qur\'an", rowId: `${_p + command} quran` },
+          { title: '🎤┊ Pengubah Suara', rowId: `${_p + command} audio` },
+          { title: '🤖┊ Jadi Bot', rowId: `${_p + command} jadibot` },
+          { title: '📌┊Info', rowId: `${_p +command} info` },
+          { title: '❔┊Tanpa Kategori', rowId: `${_p + command} tanpakategori` },
+          { title: '🌙┊ Owner', rowId: `${_p + command} owner` },
         ]
       }
     ]
     const listMessage = {
       text: `
-❏ *U S E R   I N F O*
+⋆ : ̗̀➛ *U S E R   I N F O*
 • Nama    : *${name}*
 • Limit   : *${limit}*
 • Status  : *${global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) ? 'Owner Bot' : 'Users'}*
 • Premium : *${premium ? `${conn.msToDate(premiumTime - new Date() * 1)}` : 'Gratisan'}*
 
-❏ *S T A T U S   I N F O*
+⋆ : ̗̀➛ *S T A T U S   I N F O*
 • Total User : *${rtotalreg} dari ${totalreg}*
 • Tersisa    : *${limit} Limit*
 • Role       : *${role}*
 • Level      : *${level}*
 
-❏ 𝙏𝙄𝙈𝙀
+⋆ : ̗̀➛ 𝙏𝙄𝙈𝙀
 » Wib : *${time}*
 » Tanggal : *${week} ${weton} ${date}*
 
-❏ 𝙏𝘼𝙃𝙐𝙉 𝘽𝘼𝙍𝙐
+⋆ : ̗̀➛ 𝙏𝘼𝙃𝙐𝙉 𝘽𝘼𝙍𝙐
 _*${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik*_
 
-❏ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
+⋆ : ̗̀➛ 𝙍𝘼𝙈𝘼𝘿𝘼𝙉
 _*${harii} Hari ${jamm} Jam ${menitt} Menit ${detikk} Detik*_
 
-${pe}Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
+📮Note: Jika ada Fitur yg Error Lapor ke owner${pe}`,
       footer: wm,
       title: judul,
-      buttonText: "Klik Disini Ye",
+      buttonText: "Pilih menu disini",
       sections
     }
     return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(judul), contextInfo: { forwardingScore: 99999, isForwarded: true }})
