@@ -7,6 +7,8 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].limit = Infinity
         global.db.data.users[m.sender].level = Infinity
         global.db.data.users[m.sender].exp = 99999999999999
+        global.db.data.users[m.sender].mythic = 999999999999
+        global.db.data.users[m.sender].legendary = 999999999
         
 }
 handler.help = ['cheat']
