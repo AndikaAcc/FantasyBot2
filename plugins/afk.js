@@ -4,7 +4,7 @@ let handler = async(m, { conn, usedPrefix, text }) => {
     user.afkReason = text
     conn.sendTemplateButtonDoc(m.chat, img, `
 ${conn.getName(m.sender)} sekarang AFK${text ? ': ' + text : ''}
-`, wm, `Menu`, `${usedPrefix}menu`, m)
+`, wm, `Menu Bot`, `${usedPrefix}menu`, m)
 }
 handler.help = ['afk <reason>']
 handler.tags = ['main']
