@@ -1,4 +1,4 @@
-const limit = 2000
+const limit = 20000
 const potion = 500
 const Spotion = 150 
 const Bdiamond = 900
@@ -29,6 +29,9 @@ let handler  = async (m, { conn, command, args, usedPrefix }) => {
     let _type = (args[1] || '').toLowerCase()
     let jualbeli = (args[0] || '').toLowerCase()
     const Kchat = `
+            ⭐ 
+FantasyBot Shop
+
 ${usedPrefix}shop <Buy|sell> <item> <jumlah>\n
 Contoh penggunaan: *${usedPrefix}shop buy potion 1*\n\n
 List Barang:\n\n
@@ -48,7 +51,7 @@ ${rpg.emoticon('batu')}Batu           :  ${Bbatu}
 ${rpg.emoticon('string')}String         :  ${Bstring}
 ${rpg.emoticon('iron')}Iron           :  ${Biron}`.trim() +
 '```'
-+ '\n\n*♻️Barang                       | 💲Harga Jual*\n' +
++ '\n\n*♻️Barang                       | 💵Harga Jual*\n' +
 '```' + `
 ${rpg.emoticon('potion')}Potion         :  ${Spotion}
 ${rpg.emoticon('diamond')}Diamond        :  ${Sdiamond}
