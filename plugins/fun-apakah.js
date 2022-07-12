@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['apakah <text>?']
 handler.tags = ['kerang']
 handler.customPrefix = /(\?$)/
-handler.command = /^apakah/i
+handler.command = /^(apakah)$/i
 
 module.exports = handler
 
