@@ -11,7 +11,7 @@ let handler = async (m, { conn, command, text }) => {
 }
 handler.help = ['apakah <text>']
 handler.tags = ['kerang']
-handler.command = /^apakah$/i
+handler.command = /^(apakah)$/i
 
 module.exports = handler
 
