@@ -626,7 +626,7 @@ module.exports = {
                 if (chat.welcome) {
                     let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                     for (let user of participants) {
-                        let pp = 'https://telegra.ph/file/93d651998e25594cb961e.jpg'
+                        let pp = 'https://telegra.ph/file/80c6f9cd2fde4c42d9cad.jpg'
                         try {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
@@ -644,7 +644,7 @@ module.exports = {
                             let lea = API('hardianto', '/api/goodbye3', {
                                 profile: pp,
                                 name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/7c412c1af76e90e09559e.jpg',
+                                bg: 'https://telegra.ph/file/58ab5745f0ea25372e332.jpg',
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
