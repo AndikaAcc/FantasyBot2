@@ -11,8 +11,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['bisakah <text>']
 handler.tags = ['kerang']
-handler.command = /^bisa(kah)?$/i
-
+handler.command = /^(bisakah)$/i
 module.exports = handler
 
 function pickRandom(list) {
