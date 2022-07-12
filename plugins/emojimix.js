@@ -14,6 +14,8 @@ if (!args[0]) throw 'Contoh penggunaan:\n\n*.emojimix 🙁+😣*'
 handler.tags = ['maker']
 handler.help = ['emojimix <emoji1> + <emoji2>']
 handler.command = /^((emoji|se)mix)$/i
+handler.limit=true
+
 module.exports = handler
 
 
