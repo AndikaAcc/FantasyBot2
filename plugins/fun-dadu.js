@@ -12,5 +12,6 @@ let handler = async (m, { conn }) => {
 handler.help = ['dadu']
 handler.tags = ['sticker', 'fun']
 handler.command = /^dadu$/i
+handler.limit = true
 
 module.exports = handler
