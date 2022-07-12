@@ -38,7 +38,7 @@ global.WM = '𝑭𝒂𝒏𝒕𝒂𝒔𝒚𝑩𝒐𝒕'
 global.linkgc = 'https://chat.whatsapp.com/DsmGGlFmlthBf9TOmxrDV2'
 global.linkig = 'https://www.instagram.com/gataukoktanyasaiya'
 global.deslink = ''
-global.titlink = 'Folllow me on Instagram'
+global.titlink = 'Follow Instagram'
 global.bodlink = '@gataukoktanyasaiya'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
