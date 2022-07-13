@@ -80,7 +80,7 @@ ${rpg.emoticon('sampah')} *sampah:* ${sampah}${potion == 0 ? '' : `\n*${rpg.emot
 }
 handler.help = ['petualang', 'mulung', 'work']
 handler.tags = ['rpg']
-handler.command = /^(petualang|mulung|work|w)$/i
+handler.command = /^(petualang|mulung|work|w|adventure)$/i
 
 handler.fail = null
 handler.register = false
